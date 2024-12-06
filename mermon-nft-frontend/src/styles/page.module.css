@@ -1,0 +1,215 @@
+/* コンテナ全体 */
+.container {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  max-width: 450px;
+  margin: 70px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* タイトル */
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* アバターコンテナ */
+.avatarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* アバター */
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* アバターの情報表示 */
+.info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 20px;
+}
+
+/* 成長値 */
+.growthValue, .coupon {
+  text-align: center;
+  font-size: 16px;
+}
+
+/* プログレスバー */
+.progressBar {
+  margin: 20px 0;
+  position: relative;
+  height: 6px;
+  background-color: #ddd;
+  border-radius: 3px;
+}
+
+/* 成長の進捗 */
+.progress {
+  width: 66%;
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 3px;
+}
+
+.link {
+  color: rgb(0, 98, 255);
+}
+
+/* ステージインディケーター */
+.stageIndicator {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #333;
+}
+
+/* カード */
+.card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* 現在のステージ */
+.currentStage {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* 成長ボタン */
+.growButton {
+  margin-top: 10px;
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* フォームラベルと入力 */
+.label {
+  display: block;
+  margin: 10px 10px 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* 入力フィールド */
+.input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  margin-bottom: 100px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+/* オプションボタン */
+.options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.optionButton {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  flex: 1;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/* メルモンスコア */
+.score {
+  margin-bottom: 20px;
+}
+
+.score p {
+  font-size: 14px;
+  color: #888;
+}
+
+.score h3 {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* メルモンショップボタン */
+.shopButton {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* MetaMask接続ボタン */
+.connectButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 100;
+}
+
+/* フォーム入力を囲むためのラッパー */
+.formWrapper {
+  margin-top: 20px;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  .info {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .progressBar {
+    margin: 15px 0;
+  }
+
+  .options {
+    flex-direction: column;
+  }
+
+  .optionButton {
+    margin: 5px 0;
+  }
+
+  .growButton, .shopButton {
+    width: 100%;
+  }
+}
